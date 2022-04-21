@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="196.973" height="195.387" viewBox="0 0 196.973 195.387">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.723" cy="0.749" r="0.376" gradientTransform="translate(0 0.047) scale(1 0.906)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc239"/>
+      <stop offset="1" stop-color="#fdc139"/>
+      <stop offset="1" stop-color="#fca0ff"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_109" data-name="Group 109" transform="translate(0.661)">
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="97.693" cy="97.693" r="97.693" transform="translate(0.926 0)" fill="url(#radial-gradient)"/>
+    <text id="_100_on_Delivery_" data-name="100%  
+on Delivery
+" transform="translate(60.691 139.829)" fill="#02084a" font-size="17" font-family="Manrope-Bold, Manrope" font-weight="700"><tspan x="0" y="0" xml:space="preserve">100%  </tspan><tspan x="0" y="18">on Delivery</tspan><tspan x="0" y="36"></tspan></text>
+    <path id="Path_370" data-name="Path 370" d="M-1.512-4.2s52.59,23.518,101.6,6.269,6.179,20.015,6.179,20.015" transform="translate(1.512 103.75)" fill="none" stroke="#2f3dcc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" opacity="0.213"/>
+    <g id="Group_105" data-name="Group 105" transform="translate(58.393 20.688)">
+      <g id="Group_104" data-name="Group 104" transform="translate(0 0)">
+        <text id="_0_" data-name="0%
+" transform="translate(0 48)" fill="#02084a" font-size="45" font-family="Manrope-SemiBold, Manrope" font-weight="600"><tspan x="0" y="0">0%</tspan><tspan x="0" y="20"></tspan></text>
+      </g>
+      <text id="Upfront" transform="translate(2.298 70.869)" fill="#02084a" font-size="17" font-family="Manrope-Bold, Manrope" font-weight="700"><tspan x="0" y="0">Upfront</tspan></text>
+    </g>
+  </g>
+</svg>
