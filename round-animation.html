@@ -27,6 +27,76 @@
                 transform: rotate(360deg);
             }
         }
+
+
+        .body {
+            /* background: black; */
+        }
+
+        .main {
+            width: 195px;
+            height: 195px;
+            border: 1px solid #CCC;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 50%;
+            position: relative;
+            background-color: red;
+            overflow: hidden;
+
+        }
+
+        .main:hover img {
+            /* animation: circle 1s linear forwards; */
+            transform: translateY(-62px) translateX(34px) rotate(-90deg) translateX(10px);
+        }
+
+        img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            /* transform: translateY(-62px) translateX(34px) rotate(-90deg) translateX(10px); */
+            transform: translateY(0%) translateX(0) rotate(0deg) translateX(0);
+            transition: 0.8s ease-in-out;
+
+        }
+
+        .circle {
+            /* width: 80px;
+            height: 80px; */
+            /* background: cyan; */
+            /* border-radius: 50%;
+            position: absolute;
+            background-image: url('./yellow.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70px;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            margin: auto;
+            animation: circle 2s linear forwards; */
+        }
+
+        @keyframes circle {
+            0% {
+                /* transform: rotate(30deg) translateX(50%) translateY(9%) rotate(10deg); */
+                transform: translateY(0%) translateX(0) rotate(0deg) translateX(0);
+
+            }
+
+            100% {
+                /* transform: rotate(-70deg) translateX(50%) translateY(9%) rotate(0deg); */
+                transform: translateY(-62px) translateX(34px) rotate(-90deg) translateX(10px);
+            }
+        }
     </style>
 
 </head>
@@ -34,6 +104,13 @@
 <body>
 
     <div class="round"></div>
+
+    <div class="body">
+        <div class="main">
+            <!-- <div class="circle"></div> -->
+            <img src="./yellow.svg" alt="">
+        </div>
+    </div>
 
 </body>
 
