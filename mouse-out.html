@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mouse.In {
+            color: red;
+        }
+
+        .mouse.out {
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 
+
+        Hi,
+        This library is used for checking mouse is out of window or not 
+        you can also run this and if any doubt please refer the following link
+        https://thewebdev.info/2021/05/23/how-to-detect-when-the-mouse-leaves-the-window-with-javascript/
+
+     -->
+
+    <!-- just text -->
+    <h1 class="mouse In">Mouse inside window</h1>
+
+    <script>
+        document.addEventListener("mouseleave", (event) => {
+
+            // no need of this var because it's only using for changing the text. this is just a example
+            var mouse = document.querySelector(".mouse");
+
+            if (event.clientY <= 0 || event.clientX <= 0 || (event.clientX >= window.innerWidth || event.clientY >= window.innerHeight)) {
+
+                // you can write what ever you want
+                // like adding classes, popup open, redirect and all
+                mouse.innerHTML = "mouse is Out of website";
+
+            }
+        });
+    </script>
+
+</body>
+
+</html>
