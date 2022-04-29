@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi step form</title>
+
+    <style>
+        .first{
+
+        }
+        .second{
+
+        }
+        .form-blocks{
+            display: none;
+        }
+        .active{
+            display: block;
+        }   
+    </style>
+
+</head>
+<body>
+
+    <form action="">
+    <div class="form-blocks first active">
+        <input type="text" id="firstBox" placeholder="firstBox">
+        <button class="next">Next</button>
+    </div>
+    <div class="form-blocks second">
+        <button class="prev">Prev</button>
+        <input type="text" id="seondBox" placeholder="SecondBox">
+        <input type="submit" value="submit">
+    </div>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            
+
+            $(".next").click(function (e) { 
+
+                e.preventDefault();
+                var firstBox = $("#firstBox").val();
+                var fistDataBox = document.querySelector('.first');
+                var secondDataBox = document.querySelector('.second');
+                
+                var classAdd = secondDataBox.classList.add("active");
+                var classRemove = fistDataBox.classList.remove("active")
+
+
+                firstBox == "" ? (fistDataBox.classList.add("active"), secondDataBox.classList.remove("active")) : (fistDataBox.classList.remove("active"), secondDataBox.classList.add("active"));
+                
+
+                // if(firstBox == ""){
+                //     console.log("succes");
+                //     $(".first").addClass("active");
+                //     $(".second").removeClass("active");
+                // }
+                // else{
+                //     console.log("3g");
+                //     $(".first").removeClass("active");
+                //     $(".second").addClass("active");
+                // }
+            });
+
+            $(".prev").click(function (e) { 
+                e.preventDefault();
+                $(".second").removeClass("active");
+                    $(".first").addClass("active");
+            });
+        });
+
+    </script>
+    
+</body>
+</html>
