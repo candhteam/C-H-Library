@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Word</title>
+
+    <style>
+        /** Code By Webdevtrick ( https://webdevtrick.com ) **/
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+        div {
+            font-family: 'Open Sans', sans-serif;
+            width: 400px;
+            text-align: justify;
+            margin: 20px auto;
+            font-size: 1rem;
+        }
+
+        .firstWord {
+            color: red;
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>Web Dev Trick is a blog for web designers, graphic designers, web developers & SEO Learner as
+        well
+        as freelancers seeking to broaden their mind and also enhance their skills.
+        Web Dev Trick is a blog for web designers, graphic designers, web developers & SEO Learner as well as
+        freelancers
+        seeking to broaden their mind and also enhance their skills.
+        Web Dev Trick is a blog for web designers, graphic designers, web developers & SEO Learner as well as
+        freelancers
+        seeking to broaden their mind and also enhance their skills.
+    </div>
+
+    <h1 id="firstWord"> Kashmiri powder</h1>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script>
+
+
+        var firstWordText = $("#firstWord");
+        var text = firstWordText.text().trim().split(" ");
+        var first = text.shift();
+        firstWordText.html((text.length > 0 ? "<span class='firstWord'>" + first + "</span> " : first) + text.join(" "));
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

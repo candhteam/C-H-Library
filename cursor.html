@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+</head>
+
+<body>
+
+    <h1>Hello</h1>
+    <img class="banner" src="./images/offer-circle.svg" alt="">
+
+    <div class="cursor"></div>
+
+    <script>
+
+
+
+        let banner = $(".banner");
+
+
+        if (banner.length == 1 && $(window).width() > 992) {
+            let mouseCursor = document.querySelector('.cursor');
+            let mapLink = document.querySelector('.map-link');
+
+            window.addEventListener('mousemove', cursor);
+
+            function cursor(e) {
+                mouseCursor.style.top = e.pageY + 'px';
+                mouseCursor.style.left = e.pageX + 'px';
+            }
+
+            mapLink.addEventListener('mouseleave', () => {
+                mouseCursor.classList.remove("link-grow");
+            });
+            mapLink.addEventListener('mouseover', () => {
+                mouseCursor.classList.add("link-grow");
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
